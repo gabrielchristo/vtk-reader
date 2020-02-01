@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/+x.png</file>
+		<file>icons/-x.png</file>
+		<file>icons/+y.png</file>
+		<file>icons/-y.png</file>
+		<file>icons/+z.png</file>
+		<file>icons/-z.png</file>
+		<file>icons/sobre.png</file>
+		<file>icons/fit.png</file>
+		<file>icons/abrir.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QVTKWidget" name="qvtkwidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1281</width>
+      <height>671</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1281</width>
+      <height>671</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpenFile"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpenFile"/>
+   <addaction name="separator"/>
+   <addaction name="actionFit"/>
+   <addaction name="actionSetPlusX"/>
+   <addaction name="actionSetMinusX"/>
+   <addaction name="actionSetPlusY"/>
+   <addaction name="actionSetMinusY"/>
+   <addaction name="actionSetPlusZ"/>
+   <addaction name="actionSetMinusZ"/>
+   <addaction name="separator"/>
+   <addaction name="actionShowMsg"/>
+   <addaction name="actionCutterPlane"/>
+   <addaction name="separator"/>
+   <addaction name="actionSobre"/>
+  </widget>
+  <action name="actionOpenFile">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/abrir.png</normaloff>:/icons/abrir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open File</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionShowMsg">
+   <property name="text">
+    <string>Show Message</string>
+   </property>
+   <property name="toolTip">
+    <string>Show Message</string>
+   </property>
+  </action>
+  <action name="actionSetPlusX">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/+x.png</normaloff>:/icons/+x.png</iconset>
+   </property>
+   <property name="text">
+    <string>View +X</string>
+   </property>
+  </action>
+  <action name="actionCutterPlane">
+   <property name="text">
+    <string>Cutter Plane</string>
+   </property>
+   <property name="toolTip">
+    <string>Cutter Plane</string>
+   </property>
+  </action>
+  <action name="actionSetPlusY">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/+y.png</normaloff>:/icons/+y.png</iconset>
+   </property>
+   <property name="text">
+    <string>View +Y</string>
+   </property>
+  </action>
+  <action name="actionSetMinusX">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/-x.png</normaloff>:/icons/-x.png</iconset>
+   </property>
+   <property name="text">
+    <string>View -X</string>
+   </property>
+  </action>
+  <action name="actionSetMinusY">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/-y.png</normaloff>:/icons/-y.png</iconset>
+   </property>
+   <property name="text">
+    <string>View -Y</string>
+   </property>
+  </action>
+  <action name="actionSetPlusZ">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/+z.png</normaloff>:/icons/+z.png</iconset>
+   </property>
+   <property name="text">
+    <string>View +Z</string>
+   </property>
+  </action>
+  <action name="actionSetMinusZ">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/-z.png</normaloff>:/icons/-z.png</iconset>
+   </property>
+   <property name="text">
+    <string>View -Z</string>
+   </property>
+  </action>
+  <action name="actionFit">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/fit.png</normaloff>:/icons/fit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Fit</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/icons/sobre.png</normaloff>:/icons/sobre.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+   <property name="toolTip">
+    <string>Sobre</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKWidget</class>
+   <extends>QWidget</extends>
+   <header>qvtkwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
